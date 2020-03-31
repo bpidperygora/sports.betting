@@ -1,0 +1,25 @@
+[21-May-2019 12:29:17 America/Chicago] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/fortegrp/public_html/wp-includes/wp-diff.php on line 13
+[21-May-2019 12:29:17 America/Chicago] PHP Warning:  Use of undefined constant WPINC - assumed 'WPINC' (this will throw an Error in a future version of PHP) in /home/fortegrp/public_html/wp-includes/wp-diff.php on line 13
+[21-May-2019 12:29:17 America/Chicago] PHP Warning:  require(ABSPATHWPINC/Text/Diff.php): failed to open stream: No such file or directory in /home/fortegrp/public_html/wp-includes/wp-diff.php on line 13
+[21-May-2019 12:29:17 America/Chicago] PHP Warning:  require(ABSPATHWPINC/Text/Diff.php): failed to open stream: No such file or directory in /home/fortegrp/public_html/wp-includes/wp-diff.php on line 13
+[21-May-2019 12:29:17 America/Chicago] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/Text/Diff.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/fortegrp/public_html/wp-includes/wp-diff.php on line 13
+[13-Aug-2019 00:47:58 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/fortegrp/public_html/wp-includes/rss-functions.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fortegrp/public_html/wp-includes/rss-functions.php on line 8
+[11-Oct-2019 16:47:30 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/fortegrp/public_html/wp-includes/rss-functions.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fortegrp/public_html/wp-includes/rss-functions.php on line 8
+[07-Dec-2019 03:37:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/fortegrp/public_html/wp-includes/rss-functions.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fortegrp/public_html/wp-includes/rss-functions.php on line 9
+[11-Dec-2019 07:36:00 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/fortegrp/public_html/wp-includes/rss-functions.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fortegrp/public_html/wp-includes/rss-functions.php on line 9
+[11-Dec-2019 07:39:27 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/fortegrp/public_html/wp-includes/rss-functions.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/fortegrp/public_html/wp-includes/rss-functions.php on line 9

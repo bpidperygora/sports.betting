@@ -1,0 +1,254 @@
+main {
+  background: #F9FAFC;
+
+  .contact_us_block {
+    padding-bottom: 5rem;
+
+    .three_blocks_content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .three_blocks_content_block {
+        border-radius: 16px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+        max-width: 350px;
+        padding: 2rem;
+        color: #323E8C;
+        margin-bottom: 3.75rem;
+
+        &_ico {
+          display: inline-flex;
+          border: 2px solid #D6D6D6;
+          border-radius: 50%;
+          width: 76px;
+          height: 76px;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 30px;
+
+          i {
+            font-size: 35px;
+          }
+
+          &_img {
+            border: none;
+
+            img {
+              width: 76px;
+              height: 76px;
+            }
+          }
+        }
+
+        &_title {
+          h4 {
+            font-size: 1.625rem;
+            font-weight: 500;
+          }
+        }
+
+        &_description {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 1.125rem;
+          font-weight: 300;
+        }
+
+        &_item {
+          a {
+            color: #EF7878;
+            font-size: 1.375rem;
+            font-weight: 500;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .two_blocks_content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &_block {
+        max-width: 540px;
+        border-radius: 12px;
+        overflow: hidden;
+        padding: 0;
+
+        .map {
+          position: relative;
+          height: 100%;
+
+          .map_block {
+            height: 100%;
+
+            .gm-style {
+              .gm-style-iw-c {
+                height: 72px;
+                width: 251px;
+                box-shadow: 0 2px 30px 0 rgba(48, 70, 89, 0.15);
+                padding: 0;
+
+                .gm-style-iw-d {
+                  width: 100%;
+                  height: 100%;
+
+                  .address {
+                    background: #f9fafc;
+                    position: absolute;
+                    padding: 16px;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    flex-direction: row;
+                    color: #3B5266;
+                    font-family: "ITC Avant Garde Gothic Std"!important;
+                    font-size: 15px;
+                    font-weight: 300;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  main {
+    .contact_us_block {
+      .three_blocks_content {
+        flex-wrap: wrap;
+
+        .three_blocks_content_block {
+          max-width: 30.5%;
+          padding: 16px;
+          margin-bottom: 1rem;
+
+          &_ico {
+            border: 1px solid #D6D6D6;
+            width: 64px;
+            height: 64px;
+
+            i {
+              font-size: 28px;
+            }
+
+            &_img {
+              border: none;
+
+              img {
+                width: 64px;
+                height: 64px;
+              }
+            }
+          }
+
+          &_title {
+            h4 {
+              font-size: 18px;
+            }
+          }
+
+          &_description {
+            font-size: 14px;
+          }
+
+          &_item {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .two_blocks_content {
+        margin-top: 30px;
+
+        &_block {
+          margin-bottom: 40px;
+          max-width: 100%;
+
+          .map {
+            min-height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    .contact_us_block {
+      .three_blocks_content {
+        flex-wrap: wrap;
+
+        .three_blocks_content_block {
+          max-width: 100%;
+          padding: 24px;
+          margin-bottom: 1rem;
+
+          &_ico {
+            border: 1px solid #D6D6D6;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 12px;
+
+            i {
+              font-size: 16px;
+            }
+
+            &_img {
+              border: none;
+
+              img {
+                width: 40px;
+                height: 40px;
+              }
+            }
+          }
+
+          &_title {
+            h4 {
+              font-size: 18px;
+            }
+          }
+
+          &_description {
+            font-size: 14px;
+            max-width: 75%;
+          }
+
+          &_item {
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .two_blocks_content {
+        margin-top: 30px;
+
+        &_block {
+          margin-bottom: 40px;
+          max-width: 100%;
+
+          .map {
+            min-height: 224px;
+          }
+        }
+      }
+    }
+  }
+}

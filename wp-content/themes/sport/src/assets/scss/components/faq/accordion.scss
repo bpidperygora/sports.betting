@@ -1,0 +1,124 @@
+.accordion_container {
+  width: 100%;
+  margin-bottom: 5rem;
+
+  .accordion {
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      border: 1px solid #EF7878;
+      border-radius: 4px;
+      position: relative;
+      padding: 24px 32px;
+      margin-bottom: 16px;
+      &:before {
+        content: '';
+        width: 8px;
+        height: 100%;
+        position: absolute;
+        background-color: #EF7878;
+        top: 0;
+        left: 0;
+      }
+
+      p {
+        display: none;
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.125rem;
+
+        span {
+          display: inline-block;
+          width: 30px;
+        }
+      }
+
+      a {
+        pointer-events: none;
+        width: 100%;
+        display: block;
+        user-select: none;
+        color: #323E8C;
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding-bottom: 0;
+        transition: .5s;
+
+        &.active {
+          &:after {
+            transform: rotate(45deg);
+            transition: all 0.2s ease-in-out;
+          }
+        }
+
+        &:after {
+          content: " ";
+          width: 14px;
+          height: 14px;
+          border-right: 4px solid #323E8C;
+          border-bottom: 4px solid #323E8C;
+          position: absolute;
+          right: 25px;
+          top: 30px;
+          transform: rotate(-45deg);
+          transition: all 0.2s ease-in-out;
+          border-radius: 2.5px;
+        }
+      }
+
+      &.active {
+        a {
+          padding-bottom: 24px;
+        }
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .accordion_container {
+    .accordion {
+      li {
+        padding: 14px 38px 14px 12px;
+
+        &:before {
+          width: 4px;
+        }
+
+        a {
+          font-size: 14px;
+          font-weight: 300;
+
+          &:after {
+            border-right: 2px solid #323E8C;
+            border-bottom: 2px solid #323E8C;
+            right: 15px;
+            top: 16px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 20px;
+        }
+
+        &.active {
+          a {
+            font-weight: 500;
+
+            &:after {
+              top: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

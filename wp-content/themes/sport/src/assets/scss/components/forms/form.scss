@@ -1,0 +1,206 @@
+.form {
+  background: #ffffff;
+  padding: 1.90625rem;
+
+  &_title {
+    h5 {
+      color: #323E8C;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 19.5px;
+    }
+  }
+
+  .wpcf7-form-control-wrap {
+    position: relative;
+    max-width: 100%;
+
+    input, textarea {
+      border: 1px solid #CECECE;
+      border-radius: 12px;
+      width: 100%;
+      min-height: 45px;
+      margin-bottom: 19.5px;
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 300;
+      font-size: 1rem;
+      padding: 0 1.2rem;
+      box-sizing: border-box;
+
+      &:focus, :hover, :focus-within, :visited, :active {
+        outline: none;
+      }
+    }
+
+    textarea {
+      padding-top: 10px;
+    }
+
+    .wpcf7-checkbox {
+      position: relative;
+      width: 100%;
+      display: block;
+
+      .wpcf7-list-item {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.5);
+        margin-left: 29px;
+        margin-bottom: 10px;
+
+        &:before {
+          content: '';
+          margin: 0;
+          box-sizing: border-box;
+          height: 18px;
+          width: 18px;
+          border: 1.5px solid #EF7878;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &:after {
+          content: '';
+          border: 2px solid #fff;
+          border-top: none;
+          border-right: none;
+          height: 4.5px;
+          width: 9px;
+          left: 4px;
+          opacity: 0;
+          display: none;
+          position: absolute;
+          top: 5px;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+
+        &.checked {
+          &:before {
+            background-color: #EF7878;
+            border-color: #EF7878;
+          }
+
+          &:after {
+            opacity: 1;
+            display: block;
+          }
+        }
+
+        span {
+          pointer-events: none;
+        }
+
+        input {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-bottom: 0;
+          margin-right: 11px;
+          min-height: 1px;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  .wpcf7-submit {
+    margin: 40px 0 0 0;
+    border: 0;
+    background: #323E8C;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0.782rem 3.137rem 0.482rem;
+    display: block;
+    text-decoration: none;
+  }
+
+  .screen-reader-response {
+    display: none;
+  }
+
+  .wpcf7-not-valid-tip {
+    position: relative;
+    color: #EF7878;
+    font-weight: 300;
+    font-size: .75rem;
+    display: block;
+    top: -14px;
+  }
+
+  .wpcf7-response-output {
+    color: #323E8C;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 19.5px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 12px;
+    margin-top: 1rem;
+
+    &.wpcf7-display-none {
+      display: none;
+    }
+
+    &.wpcf7-validation-errors {
+      color: #EF7878;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
+    .wpcf7-form-control-wrap {
+      &.full-name, &.email {
+        display: inline-block;
+        max-width: 48% !important;
+        width: 100% ;
+      }
+      &.email{
+        float: right;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    padding: 24px 15px;
+
+    &_title {
+      h5 {
+        font-size: 18px;
+      }
+    }
+
+    .wpcf7-form-control-wrap {
+      input, textarea {
+        font-size: 14px;
+        padding: 5px 12px 0;
+      }
+
+      textarea {
+        padding-top: 10px !important;
+      }
+    }
+
+    .wpcf7-submit {
+      margin: 24px auto 0;
+      font-size: 16px;
+      min-width: 225px;
+    }
+  }
+}
