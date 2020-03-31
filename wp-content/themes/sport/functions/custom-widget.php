@@ -57,11 +57,11 @@ class WP_Widget_Top_Bookmakers extends WP_Widget {
             <ul class="top_bookmakers_content_list">
 				<?php foreach ( $r->posts as $recent_post ) : ?>
 					<?php
-					$post_title   = get_the_title( $recent_post->ID );
-					$title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
-					$small_ico    = get_field( 'small_ico', $recent_post->ID );
-					$rating       = get_field( 'rating', $recent_post->ID );
-					$bonus        = get_field( 'set_bonus', $recent_post->ID );
+					$post_title = get_the_title( $recent_post->ID );
+					$title      = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
+					$small_ico  = get_field( 'small_ico', $recent_post->ID );
+					$rating     = get_field( 'rating', $recent_post->ID );
+					$bonus      = get_field( 'set_bonus', $recent_post->ID );
 					?>
                     <li>
                         <div class="top_bookmakers_content_list_item">
@@ -76,7 +76,8 @@ class WP_Widget_Top_Bookmakers extends WP_Widget {
                                     <h5>Бонус до <?php echo $bonus ?> RUB</h5>
                                 </div>
                                 <div class="top_bookmakers_content_list_item_content_go">
-                                    <button><a href="<?php the_permalink( $recent_post->ID ); ?>">Сделать ставку</a></button>
+                                    <button><a href="<?php the_permalink( $recent_post->ID ); ?>">Сделать ставку</a>
+                                    </button>
                                 </div>
                                 <div class="top_bookmakers_content_list_item_content_rating">
                                     <i class="fas fa-star"></i> <?php echo $rating; ?>

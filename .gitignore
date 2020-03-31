@@ -2,3 +2,6 @@
 /.idea
 /wp-content/themes/sport/node_modules/
 /wp-content/themes/sport/TEMP/
+/wp-content/themes/sport/functions/old/
+/wp-content/themes/sport/woocommerce/
+/wp-content/themes/sport/woocommerce.php
